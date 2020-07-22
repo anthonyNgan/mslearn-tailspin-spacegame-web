@@ -60,11 +60,11 @@ steps:
     arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
     zipAfterPublish: true
   
-- template: Tailspin.SpaceGame.Web/templates/build.yml
+- template: templates/build.yml
   parameters:
     buildConfiguration: 'Debug'
 
-- template: Tailspin.SpaceGame.Web/templatestemplates/build.yml
+- template: templates/build.yml
   parameters:
     buildConfiguration: 'Release'
 
